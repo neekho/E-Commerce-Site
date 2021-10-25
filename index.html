@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <!-- <img src="assets/images/logo1.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+                SilkRoad
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#products">Products</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="cart2.html">Cart</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="signup.html">Sign Up</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Sign In</a>
+                  </li>           
+                </ul>
+    
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+               <img src="assets/images/logo1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              <h1 class="display-4 fw-normal">Silk Road</h1>
+              <p class="lead fw-normal">This is an open market where you can buy anything.</p>
+              <a class="btn btn-md btn-primary" href="#products">Buy Now</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+          </div>
+
+          <div class="wrapper">
+            <div class="d-md-flex align-items-md-center">
+                <div class="h3">Products and Services</div>
+                <div class="ml-auto d-flex align-items-center views"> <span class="btn text-success"> <span class="fas fa-th px-md-2 px-1"></span><span>Grid view</span> </span> <span class="btn"> <span class="fas fa-list-ul"></span><span class="px-md-2 px-1">List view</span> </span> <span class="green-label px-md-2 px-1">428</span> <span class="text-muted">Products</span> </div>
+            </div>
+            <div class="d-lg-flex align-items-lg-center pt-2">
+                <div class="form-inline d-flex align-items-center my-2 mr-lg-2 radio bg-light border"> <label class="options">Most Popular <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Cheapest <input type="radio" name="radio" checked> <span class="checkmark"></span> </label> </div>
+                <div class="form-inline d-flex align-items-center my-2 checkbox bg-light border mx-lg-2"> <label class="tick">New <input type="checkbox" checked="checked"> <span class="check"></span> </label> <span class="text-success px-2 count"> 328</span> </div>
+                <div class="form-inline d-flex align-items-center my-2 checkbox bg-light border mx-lg-2"> <label class="tick">Old <input type="checkbox"> <span class="check"></span> </label> <span class="text-success px-2 count"> 72</span> </div>
+                <div class="form-inline d-flex align-items-center my-2 checkbox bg-light border mx-lg-2"> <label class="tick">Philippines <input type="checkbox"> <span class="check"></span> </label> <span class="border px-1 mx-2 mr-3 font-weight-bold count"> 6</span></div>
+            </div>
+
+            <!-- MOBILE FILTERING -->
+            <div class="filters"> <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">Filter<span class="px-1 fas fa-filter"></span></button> </div>
+              <div id="mobile-filter">
+                <div class="py-3">
+                    <h5 class="font-weight-bold">Categories</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Weapons <span class="badge badge-primary badge-pill">328</span> </li>
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Elements <span class="badge badge-primary badge-pill">112</span> </li>
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Assassination <span class="badge badge-primary badge-pill">32</span> </li>
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Substances <span class="badge badge-primary badge-pill">48</span> </li>
+                    </ul>
+                </div>
+            </div> <!-- END OF MOBILE FILTERING-->
+
+
+            <!-- Category Filtering-->
+            <div class="content py-md-0 py-3">
+                <section id="sidebar">
+                    <div class="py-3">
+                        <h5 class="font-weight-bold">Categories</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Weapons <span class="badge badge-primary badge-pill">328</span> </li>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Elements <span class="badge badge-primary badge-pill">112</span> </li>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Assassination <span class="badge badge-primary badge-pill">32</span> </li>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> Substances <span class="badge badge-primary badge-pill">48</span> </li>
+                        </ul>
+                    </div>
+                    
+
+                </section> <!-- Products Section -->
+                <section id="products">
+                    <div class="container py-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                                <div class="card"> <img class="card-img-top" src="https://www.freepnglogos.com/uploads/scar-png/scar-suggestion-gold-skin-for-kills-per-weapon-fortnitebr-28.png">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">SCAR-H</h6>
+                                        <div class="text-muted description">The SCAR-H deals high damage, being a three-shot-kill</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">0.067 BTC</div>
+                                                
+                                            </div>
+                                            <a href="products/scar-h.html" target="_this"> <div class="btn btn-primary">Buy now</div></a>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-md-0 pt-4">
+                                <div class="card"> <img class="card-img-top" src="https://www.freepnglogos.com/uploads/ak-47-png/ak-47-weapon-info-19.png">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">AK-47</h6>
+                                        <div class="text-muted description">The rifle that was designed to be easy to use, easy to repair, and reliable.</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">0.064 BTC</div>
+                                                
+                                            </div>
+                                            <div class="btn btn-primary">Buy now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-lg-0 pt-4">
+                                <div class="card"> <img class="card-img-top" src="https://www.freepnglogos.com/uploads/katana-png/katana-shadow-fight-wiki-fandom-powered-wikia-35.png">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">18th Century Katana</h6>
+                                        <div class="text-muted description">Known throughout as being a superior sword.</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">0.079 BTC</div>
+                                                
+                                            </div>
+                                            <div class="btn btn-primary">Buy now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-lg-4 pt-4">
+                                <div class="card"> <img class="card-img-top" src="https://www.freepnglogos.com/uploads/missile-png/missile-fox-two-the-story-the-aim-sidewinder-don-hollway-27.png">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">Nuclear Warhead</h6>
+                                        <div class="text-muted description">Cause massive death and destruction.</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">5 BTC</div>
+                                          
+                                            </div>
+                                            <div class="btn btn-primary">Buy now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-lg-4 pt-4">
+                                <div class="card"> <img class="card-img-top" src="https://www.freepnglogos.com/uploads/soldier-png/image-agency-soldier-hitman-wiki-6.png">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">Hitman Service</h6>
+                                        <div class="text-muted description">Any targets can do.</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">0.070 BTC</div>
+                                                
+                                            </div>
+                                            <div class="btn btn-primary">Buy now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-lg-4 pt-4">
+                                <div class="card"> <img class="card-img-top" src="data:image/jpeg;base64,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">
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold pt-1">Chemist for Hire</h6>
+                                        <div class="text-muted description">Can do any fields of chemistry.</div>
+                                        <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-3">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">0.055 BTC</div>
+                                                
+                                            </div>
+                                            <div class="btn btn-primary">Buy now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
