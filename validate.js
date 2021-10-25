@@ -19,6 +19,7 @@ function checkPass() {
     }
     
     else {
+        // 
         //The passwords do not match.
         //Set the color to the bad color and
         //notify the user.
